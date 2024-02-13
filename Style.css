@@ -1,0 +1,703 @@
+
+/* body */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+body{
+   background-color:#f1ebeb;
+}
+/* body */
+
+/* Top header */
+.top-navbar{
+    background-color: #a9a9a926;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:space-between;
+}
+.top-logo{
+    margin-left: 15px;
+    cursor: pointer;
+}
+.other-links{
+    margin-right: 33px;
+    transition: all 0.3s;
+}
+.other-links i{
+    color: #1c1c50;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.other-links i:hover{
+    transform: scale(1.50);
+}
+#btn-login{
+    width: 100px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-login a{
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+}
+#btn-login a:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+#btn-login:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+@media screen and (max-widht:500px) {
+    .top-logo{
+        margin-left: 30px;
+    }
+    .other-links{
+        font-size: 15px;
+    }
+    #btn-login{
+        width: 60px;
+        height: 5vh;
+    }
+}
+@media screen and (max-widht:350px) {
+    .top-logo{
+        margin-left: 10px;
+    }
+    .other-links{
+        margin-right: 10px;
+    }
+    .other-links{
+        font-size: 10px;
+    }
+    #btn-login{
+        width: 50px;
+        height: 5vh;
+        font-size: 13px;
+    }
+}
+/* Top header */
+
+/* header 2 */
+.d-flex{
+    position:absolute;
+      right:5px;
+    width: auto;
+}
+.home-section{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #a9a9a926;
+}
+.navbar-brand {
+    font-style:oblique;
+    display: inline-block;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3498db; /* Blue color */
+}
+.navbar-brand span{
+    color: #bd2130;
+    font-weight: bold;
+    font-style:oblique;
+}
+/* On hover, change text color */
+.navbar-brand:hover {
+    color: #2980b9; /* Slightly darker blue on hover */
+    transition: .2s;
+    animation: flpp infinite 5s;
+}
+#navbar{
+    background-color: #1c1c50;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+}
+#navbar .nav-link{
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+#navbar .nav-link:hover{
+    color: white;
+    border-radius: 5px;
+}
+.dropdown li a{
+    color: white;
+}
+#search-btn{
+    color:white;
+    border: 1px solid white;
+    background-color: #1c1c50;
+
+}
+#search-btn:hover{
+    background-color:white;
+    color:#1c1c50;  
+}
+/*  header 2 */
+
+/* Home */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 100%;
+}
+.home .contant{
+    flex: 1 1 400px;
+    margin-top: 30px;
+}
+.contant h3{
+    margin-left: 70px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #1c1c50;
+    font-weight: bold;
+}
+.contant h3 span{
+    font-size: 40px;
+}
+.contant p{
+    margin-left: 70px;
+    color: #1c1c50;
+}
+.contant #shopnow{
+            margin-left: 70px;
+            width: 200px;
+            height: 38px;
+            border: 2px solid #1c1c50;
+            font-weight: bold;
+            transition: 0.05s ease;
+            cursor: pointer;
+            background-color: white;
+}
+.contant #shopnow:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+.contant #shopnow a{
+    color:#1c1c50;
+}
+.contant #shopnow:hover a{
+    background-color: #1c1c50;
+    color: white;
+}
+@media screen and (max-widht:800px) {
+    .contant h3{
+        margin-left: 50px;
+        font-size: 40px;
+    }
+    .contant p{
+        margin-left: 50px;
+    }
+    .contant #shopnow{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-widht:570px) {
+    .contant h3{
+        margin-left: 20px;
+    }
+    .contant p{
+        margin-left: 20px;
+    }
+    .contant #shopnow{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-widh:799px) {
+    .home-section{
+        height: 150vh;
+    }
+}
+@media screen and (max-widh:550px) {
+    .home-section{
+        height: 100vh;
+    }
+}
+/* Home */
+
+/* Top cards */
+#top-cards{
+    margin-top: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+#top-cards .card img{
+    height: 60vh;
+}
+#top-cards h5{
+    color: #1c1c50;
+    font-weight: bold;
+}
+#top-cards button{
+    width: 150px;
+    height: 33px;
+    font-weight: bold;
+    transition: 0.05s ease;
+    letter-spacing: 3px;
+    color: #1c1c50;
+    background-color: transparent;
+    border: 2px solid #1c1c50;
+    cursor: pointer;
+}
+#top-cards button:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+/* Top cards */
+
+/* banner */
+ .banner{
+    width: 100%;
+    height: 60vh;
+}
+/* banner */
+
+/* All Cards */
+#product-cards{
+    font-family: 'Roboto Slab', serif;
+    margin-top: 100px;
+}
+#product-cards .card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px,7px,29px,0px;
+    transition: all 0.3s;
+}
+#product-cards .card:hover{
+    transform: scale(1.10);
+}
+#product-cards h2{
+    margin-top: 30px;
+    color: #1c1c50;
+    text-shadow: 1px,1px,1px black; 
+}
+#product-cards h3{
+    letter-spacing: 3px;
+    color: #1c1c50;
+    text-shadow: 0px,1px,1px black; 
+    font-weight: bold;
+}
+#product-cards h5 span{
+    float: right;
+    color: #1c1c50;
+    cursor: pointer;
+}
+.checked{
+    color: yellow;
+}
+#viewmorebtn{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+    width:200px;
+    height: 32px;
+    color: #1c1c50;
+    letter-spacing: 5px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #1c1c50;
+    transition: 0.5s ease;
+}
+#viewmorebtn:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+/* All Cards */
+
+/* Carousels */
+.carousel-inner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 20%;
+}
+#carouselExampleDark{
+    background-color: #f1f1f3;
+    opacity:1;
+}
+/* carousels */
+
+/* offer section */
+#offer{
+    margin-top: 50px;
+    transition: all 0.3s;
+}
+#offer i{
+    font-size: 60px;
+    color: #1c1c50;
+    
+}
+#offer i:hover {
+    color:crimson;
+      top: -5px;
+      transition: .2s;
+      animation: flpp infinite 5s;
+}
+/* Offer section */
+
+/* Footer */
+#footer{
+    padding: 0 0 30px 0;
+    color: #d0d0d0;
+    font-size: 14px;
+    background-color: #1c1c50;
+    font-family: 'Roboto Slab', serif;
+}
+#footer .footer-top{
+    padding: 60px 0 30px;
+    background-color: #1c1c50;
+    color: white;
+}
+#footer .footer-top .footer-content h3{
+     color: white;
+     text-shadow: 1px 1px 1px black;
+}
+#footer .footer-top .footer-content h4{
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-content p{
+    font-size: 14px;
+    margin: 0;
+    color: white;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul li{
+    display: flex;
+    padding-right:10px 0;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child{
+    padding-right: 0;
+}
+
+#footer .footer-top .footer-links ul li a{
+    color: white;
+    line-height: 2;
+}
+
+#footer .footer-top .social-links a{
+    transform-style: preserve-3d;
+    color: #ddd;
+    padding: 5px 10px;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+#footer .footer-top .social-links a i{
+    display: inline-block;
+      position: relative;
+      top: 0;
+      transition: .2s;
+}
+#footer .footer-top .social-links a:hover i{
+    color: #dc3545;
+      top: -5px;
+      transition: .2s;
+      animation: flpp infinite 5s;
+}
+@keyframes flpp {
+    0% {
+      transform: rotateY(0deg);
+    }
+
+    50% {
+      transform: rotateY(180deg);
+    }
+
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+#footer .copyrights{
+    text-align: center;
+    float: left;
+}
+#footer .cridets{
+    text-align: center;
+    float: right;
+}
+/* Footer */
+
+/* Login page */
+ .login{
+    width: 85%;
+    margin: 30px;
+    font-family: 'Roboto Slab', serif;
+ }
+  #side1{
+    background-color: #1c1c50;
+    height: 80vh;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px,7px,29px,0px;
+  }
+  #side1 h3{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+  }
+  #side1 p{
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+  }
+  #btn{
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  #btn a{
+    color: white;
+    text-decoration: none;
+  }
+  #side2{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px,7px,29px,0px;
+    align-items: center;
+    text-align: center;
+  }
+  #side2 h3{
+    color: #1c1c50;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  #side2 .inp{
+    margin-top: 32px;
+  }
+  #side2 input{
+    width: 500px;
+    margin-top: 20px;
+    height: 36px;
+    align-items: center;
+  }
+  #side2 p{
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  #side2 .icons i{
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  #login{
+    margin-top: 10px;
+  }
+  #login button{
+    width: 200px;
+    height: 32px;
+    color: white;
+    background-color:#1c1c50;
+    border: none;
+    font-weight: bold;
+  }
+  #login button:hover,
+  #reset button:hover {
+    background-color:white;
+    color:#1c1c50;
+  }
+  @media screen and (max-width: 992px) {
+    #side2 input{
+        width: 300px;
+    }
+  }
+  @media screen and (max-width: 330px) {
+    #side2 input{
+        width: 200px;
+    }
+  }
+  .error-message {
+    color: red;
+  }
+  /* Login page */
+
+  /* cart page */
+  .cart-container {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .cart-title {
+    color: #1c1c50;
+    font-weight: bold;
+  }
+
+  .cart-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .delete-btn {
+    background-color: #1c1c50;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+  }
+
+  .delete-btn:hover {
+    background-color: #bd2130;
+  }
+
+  .quantity-form {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .quantity-btn {
+    background-color: #1c1c50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color white transition;
+  }
+
+  .quantity-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .cart-summary {
+    margin-top: 30px;
+  }
+
+  .summary-card {
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .summary-header {
+    background-color:#1c1c50;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .summary-body {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .summary-footer {
+    background-color: #1c1c50;
+    border-top: 2px solid #fff;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .checkout-btn {
+    background-color:white;
+    color: black;
+    border: none;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+
+  .checkout-btn:hover {
+    background-color: green;
+  }
+  /* cart page */
+
+  /* contact page */
+  #contact{
+    margin-top: 50px;
+  }
+  #contact h1{
+    color: #1c1c50;
+    text-shadow: 0px 0px 1px black;
+  }
+  #contact .card{
+    height: 80px;
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px,7px,29px,0px;
+  }
+  #contact .card i{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  #contact .card h6{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+  }#messagebtn button{
+    margin-top: 30px;
+    width: 200px;
+    height: 33px;
+    background-color: transparent;
+    letter-spacing: 3px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    transition: 0.5s ease;
+  }
+  #messagebtn button:hover{
+    background-color: #1c1c50;
+    color: white;
+  }
+  /* contact page */
